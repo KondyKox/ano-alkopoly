@@ -1,0 +1,46 @@
+:root {
+  --text-primary: hsl(0, 0%, 89%);
+  --text-secondary: hsl(0, 3%, 13%);
+
+  --bg-pink: hsl(340, 80%, 60%);
+  --bg-purple: hsl(280, 60%, 25%);
+  --bg-gradient: linear-gradient(135deg, var(--bg-pink), var(--bg-purple));
+
+  /* ANO */
+  --ano-red: hsl(10, 90%, 45%);
+  --ano-blue: hsl(200, 80%, 55%);
+  --ano-yellow: hsl(56, 94%, 48%);
+  --ano-green: hsl(118, 89%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-primary);
+  background: var(--bg-gradient);
+  background-size: 200% 200%;
+  animation: animate-bg 6s ease infinite;
+}
+
+@keyframes animate-bg {
+  0% {
+    background-position: 0% 50%;
+    translate: rotate(0deg);
+  }
+  50% {
+    background-position: 100% 100%;
+    translate: rotate(180deg);
+  }
+  100% {
+    background-position: 0% 50%;
+    translate: rotate(360deg);
+  }
+}
