@@ -1,16 +1,20 @@
 :root {
-  --text-primary: hsl(0, 0%, 89%);
+  --text-primary: hsl(0, 0%, 90.6%);
   --text-secondary: hsl(0, 3%, 13%);
+  --text-hover: hsl(192, 88%, 49%);
 
   --bg-pink: hsl(340, 80%, 60%);
+  --bg-pink-active: hsl(340, 80%, 50%);
   --bg-purple: hsl(280, 60%, 25%);
   --bg-gradient: linear-gradient(135deg, var(--bg-pink), var(--bg-purple));
 
-  /* ANO */
-  --ano-red: hsl(10, 90%, 45%);
-  --ano-blue: hsl(200, 80%, 55%);
-  --ano-yellow: hsl(56, 94%, 48%);
-  --ano-green: hsl(118, 89%, 50%);
+  --font-sm: 0.85rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 1.75rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
 }
 
 * {
@@ -20,8 +24,11 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   color: var(--text-primary);
@@ -30,6 +37,39 @@ body {
   animation: animate-bg 6s ease infinite;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+/* Home Page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  font-size: var(--font-xl);
+}
+
+.home__btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Animate bg */
 @keyframes animate-bg {
   0% {
     background-position: 0% 50%;
@@ -42,5 +82,17 @@ body {
   100% {
     background-position: 0% 50%;
     translate: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: var(--font-3xl);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    font-size: var(--font-4xl);
   }
 }

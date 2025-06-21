@@ -1,0 +1,7 @@
+:root {
+  /* ANO */
+  --ano-red: hsl(10, 90%, 45%);
+  --ano-blue: hsl(200, 80%, 55%);
+  --ano-yellow: hsl(56, 94%, 48%);
+  --ano-green: hsl(118, 89%, 50%);
+}
