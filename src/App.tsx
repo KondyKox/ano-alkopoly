@@ -1,5 +1,5 @@
-import Alkopoly from "./alkopoly/Alkopoly";
-import Ano from "./ano/Ano";
+import Alkopoly from "./alkopoly";
+import Ano from "./ano";
 import Button from "./common/components/Button";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
