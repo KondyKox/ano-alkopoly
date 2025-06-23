@@ -15,7 +15,7 @@ const Alkopoly = () => {
   }, []);
 
   return (
-    <div className="alkopoly__container">
+    <div className="alkopoly-theme">
       <Board tiles={tiles} />
     </div>
   );
