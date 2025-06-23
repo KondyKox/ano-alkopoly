@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Start",
+    "type": "start",
+    "imageSrc": "./properties/start.png"
+  },
+
+  {
+    "id": 2,
+    "name": "Zjeżdzalnia na plaży",
+    "type": "property",
+    "imageSrc": "./properties/zjezdzalnia.jpg",
+    "price": 100,
+    "tax": 50
+  },
+
+  {
+    "id": 3,
+    "name": "Plac zabaw",
+    "type": "property",
+    "imageSrc": "./properties/plac_zabaw.jpg",
+    "price": 100,
+    "tax": 50
+  },
+
+  {
+    "id": 4,
+    "name": "Zakup alkoholu",
+    "type": "fine",
+    "imageSrc": "./properties/vodka.png",
+    "tax": 100
+  },
+
+  {
+    "id": 5,
+    "name": "Discord",
+    "type": "property",
+    "imageSrc": "./properties/discord.jpg",
+    "price": 100,
+    "tax": 50
+  },
+
+  {
+    "id": 6,
+    "name": "Głuchów",
+    "type": "property",
+    "imageSrc": "./properties/gluchow.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 7,
+    "name": "Karta Szansy",
+    "type": "chance",
+    "imageSrc": "./properties/chance.jpg"
+  },
+
+  {
+    "id": 8,
+    "name": "Grzywna",
+    "type": "fine",
+    "imageSrc": "./properties/fine.png",
+    "tax": 200
+  },
+
+  {
+    "id": 9,
+    "name": "Kuźnica",
+    "type": "property",
+    "imageSrc": "./properties/kuznica.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 10,
+    "name": "Wałbrzych",
+    "type": "property",
+    "imageSrc": "./properties/walbrzych.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 11,
+    "name": "Stare Bogaczowice",
+    "type": "property",
+    "imageSrc": "./properties/stare_bogaczowice.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 12,
+    "name": "Zakup zioła",
+    "type": "fine",
+    "imageSrc": "./properties/weed.png",
+    "tax": 200
+  },
+
+  {
+    "id": 13,
+    "name": "Hakuna Matata",
+    "type": "property",
+    "imageSrc": "./properties/hakuna_matata.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 14,
+    "name": "Asik",
+    "type": "property",
+    "imageSrc": "./properties/asik.jpg",
+    "price": 400,
+    "tax": 200
+  },
+
+  {
+    "id": 15,
+    "name": "Karta Szansy",
+    "type": "chance",
+    "imageSrc": "./properties/chance.jpg"
+  },
+
+  {
+    "id": 16,
+    "name": "Plaża",
+    "type": "property",
+    "imageSrc": "./properties/plaza.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 17,
+    "name": "Izba wytrzeźwień",
+    "type": "jail",
+    "imageSrc": "./properties/jail.jpg"
+  },
+
+  {
+    "id": 18,
+    "name": "Jacuzzi",
+    "type": "property",
+    "imageSrc": "./properties/jacuzzi.jpg",
+    "price": 200,
+    "tax": 100
+  },
+
+  {
+    "id": 19,
+    "name": "Dom Mikiego",
+    "type": "property",
+    "imageSrc": "./properties/dom_mikiego.jpg",
+    "price": 300,
+    "tax": 150
+  },
+
+  {
+    "id": 20,
+    "name": "Zakup alkoholu",
+    "type": "fine",
+    "imageSrc": "./properties/vodka.png",
+    "tax": 100
+  },
+
+  {
+    "id": 21,
+    "name": "Dom Kamcia",
+    "type": "property",
+    "imageSrc": "./properties/dom_kamcia.jpg",
+    "price": 300,
+    "tax": 200
+  },
+
+  {
+    "id": 22,
+    "name": "Dom Kondiego",
+    "type": "property",
+    "imageSrc": "./properties/kondi_dom.jpg",
+    "price": 300,
+    "tax": 200
+  },
+
+  {
+    "id": 23,
+    "name": "Wypłata",
+    "type": "reward",
+    "imageSrc": "./properties/reward.png"
+  },
+
+  {
+    "id": 24,
+    "name": "Grzywna",
+    "type": "fine",
+    "imageSrc": "./properties/fine.png",
+    "tax": 200
+  },
+
+  {
+    "id": 25,
+    "name": "Domek Benia",
+    "type": "property",
+    "imageSrc": "./properties/domek_benia.jpg",
+    "price": 300,
+    "tax": 150
+  },
+
+  {
+    "id": 26,
+    "name": "Domek Kubusia",
+    "type": "property",
+    "imageSrc": "./properties/domek_kubusia.jpg",
+    "price": 300,
+    "tax": 150
+  },
+
+  {
+    "id": 27,
+    "name": "Domek Ozziego",
+    "type": "property",
+    "imageSrc": "./properties/domek_oskara.jpg",
+    "price": 300,
+    "tax": 150
+  },
+
+  {
+    "id": 28,
+    "name": "Czerwony Pomost",
+    "type": "property",
+    "imageSrc": "./properties/czerwony_pomost.jpg",
+    "price": 500,
+    "tax": 250
+  },
+
+  {
+    "id": 29,
+    "name": "Remiza",
+    "type": "property",
+    "imageSrc": "./properties/remiza.jpg",
+    "price": 500,
+    "tax": 250
+  },
+
+  {
+    "id": 30,
+    "name": "Piwnica u Kamilka",
+    "type": "property",
+    "imageSrc": "./properties/piwnica_kamcia.jpg",
+    "price": 1000,
+    "tax": 500
+  },
+
+  {
+    "id": 31,
+    "name": "Karta Szansy",
+    "type": "chance",
+    "imageSrc": "./properties/chance.jpg"
+  },
+
+  {
+    "id": 32,
+    "name": "Tarnów Jezierny",
+    "type": "property",
+    "imageSrc": "./properties/tarnow_jezierny.jpg",
+    "price": 1500,
+    "tax": 750
+  }
+]

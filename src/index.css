@@ -2,9 +2,12 @@
   --text-primary: hsl(0, 0%, 90.6%);
   --text-secondary: hsl(0, 3%, 13%);
   --text-hover: hsl(192, 88%, 49%);
+  --text-green: hsl(103, 88%, 50%);
+  --text-red: hsl(4, 92%, 50%);
 
   --bg-pink: hsl(340, 80%, 60%);
   --bg-pink-active: hsl(340, 80%, 50%);
+  --bg-pink-transparent: hsla(340, 80%, 50%, 0.5);
   --bg-purple: hsl(280, 60%, 25%);
   --bg-gradient: linear-gradient(135deg, var(--bg-pink), var(--bg-purple));
 

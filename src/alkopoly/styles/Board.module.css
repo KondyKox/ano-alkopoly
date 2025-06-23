@@ -1,0 +1,91 @@
+.board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 175px);
+  grid-template-rows: repeat(4, 175px);
+  padding: 1rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-purple);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 175px;
+  min-width: 175px;
+  overflow: hidden;
+}
+
+.tile:hover {
+  background-color: var(--bg-pink-active);
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-pink-transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tile:hover::before {
+  opacity: 1;
+}
+
+.tile__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  font-size: var(--font-base);
+  z-index: 1;
+}
+
+.tile:hover .tile__header {
+  top: 0;
+  transform: translate(-50%, 50%);
+  font-size: var(--font-lg);
+}
+
+.tile__info {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: var(--font-lg);
+  z-index: 1;
+}
+
+.tile:hover .tile__info {
+  opacity: 1;
+}
+
+.tile__info span {
+  font-weight: 700;
+}
+
+.tile__price {
+  color: var(--text-green);
+}
+
+.tile__tax {
+  color: var(--text-red);
+}
