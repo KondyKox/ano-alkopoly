@@ -55,10 +55,6 @@
   overflow: hidden;
 }
 
-.tile:hover {
-  background-color: var(--bg-pink-active);
-}
-
 .tile::before {
   content: "";
   position: absolute;

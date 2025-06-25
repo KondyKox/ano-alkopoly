@@ -1,3 +1,4 @@
+import type { ModalProps } from "../../common/types/ModalProps";
 import type { AlkopolyPlayer } from "./PlayerProps";
 
 export interface TileProps {
@@ -26,4 +27,9 @@ export interface Property extends TileProps {
 export interface Alcohol {
   type: "beer" | "vodka";
   taxBonus: number;
+}
+
+// Tile Modal
+export interface TileModalProps extends Omit<ModalProps, "children"> {
+  tile: TileProps;
 }

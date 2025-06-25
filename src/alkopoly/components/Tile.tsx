@@ -1,28 +1,37 @@
 import type { TileProps } from "../types/TileProps";
 import styles from "../styles/Board.module.css";
+import { useState } from "react";
+import TileModal from "./tile-modal";
 
 const Tile = ({ tile }: { tile: TileProps }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
-    <div
-      className={styles.tile}
-      style={{ backgroundImage: `url("/alkopoly/${tile.imageSrc}")` }}
-    >
-      <h6 className={styles.tile__header}>{tile.name}</h6>
-      <div className={styles.tile__info}>
-        {tile.price && !tile.owner && (
-          <>
-            <span className={styles.tile__price}>{tile.price}</span>
-            zł
-          </>
-        )}
-        {tile.tax && tile.owner && (
-          <>
-            <span className={styles.tax}>{tile.tax}zł</span>
-            zł
-          </>
-        )}
+    <>
+      <div
+        className={styles.tile}
+        style={{ backgroundImage: `url("/alkopoly/${tile.imageSrc}")` }}
+        onClick={() => setIsOpen(true)}
+      >
+        <h6 className={styles.tile__header}>{tile.name}</h6>
+        <div className={styles.tile__info}>
+          {tile.type === "property"
+            ? !tile.owner && (
+                <>
+                  <span className={styles.tile__price}>{tile.price}</span>
+                  zł
+                </>
+              )
+            : tile.tax && (
+                <>
+                  <span className={styles.tile__tax}>{tile.tax}</span>
+                  zł
+                </>
+              )}
+        </div>
       </div>
-    </div>
+      <TileModal isOpen={isOpen} onClose={() => setIsOpen(false)} tile={tile} />
+    </>
   );
 };
 
