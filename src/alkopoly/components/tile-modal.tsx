@@ -21,32 +21,41 @@ const TileModal = ({ isOpen, onClose, tile }: TileModalProps) => {
         className={styles.tileModal__container}
         style={{ backgroundImage: `url("/alkopoly/${tile.imageSrc}")` }}
       >
-        <h3 className={styles.tileModal__header}>{tile.name}</h3>
-        {tile.owner && (
-          <div className={styles.tileModal__owner}>
-            <img
-              src={tile.owner.pawn.imageSrc}
-              alt={`Pionek ${tile.owner.name}`}
-            />
-            <span>{tile.owner.name}</span>
+        <div className={styles.tileModal__hero}>
+          <h3 className={styles.tileModal__header}>{tile.name}</h3>
+          {tile.owner && (
+            <div className={styles.tileModal__owner}>
+              <img
+                src={tile.owner.pawn.imageSrc}
+                alt={`Pionek ${tile.owner.name}`}
+              />
+              <span>{tile.owner.name}</span>
+            </div>
+          )}
+        </div>
+        <div className={styles.tileModal__content}>
+          <p className={styles.tileModal__description}>
+            <i>{tile.description}</i>
+          </p>
+          <div className={styles.tileModal__info}>
+            {tile.type === "property"
+              ? !tile.owner && (
+                  <>
+                    Zakup:{" "}
+                    <span className={styles.tileModal__price}>
+                      {tile.price}
+                    </span>
+                    zł
+                  </>
+                )
+              : tile.tax && (
+                  <>
+                    Podatek:{" "}
+                    <span className={styles.tileModal__tax}>{tile.tax}</span>
+                    zł
+                  </>
+                )}
           </div>
-        )}
-        <div className={styles.tileModal__info}>
-          {tile.type === "property"
-            ? !tile.owner && (
-                <>
-                  Zakup:{" "}
-                  <span className={styles.tileModal__price}>{tile.price}</span>
-                  zł
-                </>
-              )
-            : tile.tax && (
-                <>
-                  Podatek:{" "}
-                  <span className={styles.tileModal__tax}>{tile.tax}</span>
-                  zł
-                </>
-              )}
         </div>
       </div>
       <Button

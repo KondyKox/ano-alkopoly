@@ -7,9 +7,12 @@ export interface TileProps {
   type: TileType;
   imageSrc: string;
   owner: AlkopolyPlayer | null;
+  description: string;
   price?: number; // buying property
   tax?: number;
 }
+
+export type TileFromJSON = Omit<TileProps, "id">;
 
 export type TileType =
   | "start"
