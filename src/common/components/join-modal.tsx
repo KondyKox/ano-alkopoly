@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import type { Pawn, PawnFromJSON, Person } from "../types/PlayerProps";
-import pawnsData from "../data/pawns.json";
+import pawnsData from "../../alkopoly/data/pawns.json";
 import styles from "../styles/JoinModal.module.css";
-import Modal from "../../common/components/Modal";
-import InputGroup from "../../common/components/InputGroup";
-import Button from "../../common/components/Button";
+import Modal from "./Modal";
+import InputGroup from "./InputGroup";
+import Button from "./Button";
+import type { Pawn, PawnFromJSON, Person } from "../types/PlayerProps";
 
 const JoinModal = () => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -64,7 +64,7 @@ const JoinModal = () => {
               onClick={() => handlePawnClick(pawn)}
             >
               <img
-                src={`./alkopoly/${pawn.imageSrc}`}
+                src={`./${pawn.imageSrc}`}
                 alt={pawn.name}
                 className={styles.pawn__image}
               />

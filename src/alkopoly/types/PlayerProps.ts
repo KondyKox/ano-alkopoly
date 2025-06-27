@@ -1,30 +1,9 @@
+import type { Pawn, Player } from "../../common/types/PlayerProps";
 import type { Property, TileProps } from "./TileProps";
 
-export interface AlkopolyPlayer {
-  id: number;
-  name: string;
+export interface AlkopolyPlayer extends Player {
   pawn: Pawn;
   money: number;
   properties: Property[];
   currentTile: TileProps;
 }
-
-export interface Pawn {
-  name: string;
-  imageSrc: string;
-  person: Person;
-}
-
-export interface PawnFromJSON extends Omit<Pawn, "person"> {
-  person: string;
-}
-
-export type Person =
-  | "kondy"
-  | "kamcio"
-  | "olga"
-  | "wika"
-  | "ozzi"
-  | "kamil"
-  | "szczepan"
-  | "wiktor";

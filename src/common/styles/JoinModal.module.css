@@ -8,12 +8,13 @@
 
 .pawns__container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   overflow-y: auto;
   max-height: 300px;
+  border-left: 2px solid var(--text-primary);
 }
 
 .pawn {

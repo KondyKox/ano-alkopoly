@@ -1,134 +1,134 @@
 [
   {
     "name": "Ano Kondy",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_ano.png",
+    "imageSrc": "./pawns/kondy/kondy_ano.png",
     "person": "kondy"
   },
   {
     "name": "Kondy Dupka",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_dupka.png",
+    "imageSrc": "./pawns/kondy/kondy_dupka.png",
     "person": "kondy"
   },
   {
     "name": "Emo Kondy",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_emo.png",
+    "imageSrc": "./pawns/kondy/kondy_emo.png",
     "person": "kondy"
   },
   {
     "name": "Kondy Essa",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_essa.png",
+    "imageSrc": "./pawns/kondy/kondy_essa.png",
     "person": "kondy"
   },
   {
     "name": "Mały Kondy",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_gowniarz.png",
+    "imageSrc": "./pawns/kondy/kondy_gowniarz.png",
     "person": "kondy"
   },
   {
     "name": "Jamajka",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_jamajka.png",
+    "imageSrc": "./pawns/kondy/kondy_jamajka.png",
     "person": "kondy"
   },
   {
     "name": "Kondy - Perełka Chmielowa",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_perla.png",
+    "imageSrc": "./pawns/kondy/kondy_perla.png",
     "person": "kondy"
   },
   {
     "name": "Kondy <3 Żubrówka",
-    "imageSrc": "./game_pieces/pawns/kondy/kondy_zubrowka.png",
+    "imageSrc": "./pawns/kondy/kondy_zubrowka.png",
     "person": "kondy"
   },
 
   {
     "name": "Kamcio z Kukłą",
-    "imageSrc": "./game_pieces/pawns/kamcio/kamcio_kukla.png",
+    "imageSrc": "./pawns/kamcio/kamcio_kukla.png",
     "person": "kamcio"
   },
   {
     "name": "Kamcio - jest moc!",
-    "imageSrc": "./game_pieces/pawns/kamcio/kamcio_moc.png",
+    "imageSrc": "./pawns/kamcio/kamcio_moc.png",
     "person": "kamcio"
   },
   {
     "name": "Kamcio ze szlugiem",
-    "imageSrc": "./game_pieces/pawns/kamcio/kamcio_szlug.png",
+    "imageSrc": "./pawns/kamcio/kamcio_szlug.png",
     "person": "kamcio"
   },
 
   {
     "name": "Ozzi Dziwka",
-    "imageSrc": "./game_pieces/pawns/ozzi/ozzi_dziwka.png",
+    "imageSrc": "./pawns/ozzi/ozzi_dziwka.png",
     "person": "ozzi"
   },
   {
     "name": "Spiąca Królewna",
-    "imageSrc": "./game_pieces/pawns/ozzi/ozzi_spiaca_krolewna.png",
+    "imageSrc": "./pawns/ozzi/ozzi_spiaca_krolewna.png",
     "person": "ozzi"
   },
   {
     "name": "Ozzi w staniku",
-    "imageSrc": "./game_pieces/pawns/ozzi/ozzi_stanik.png",
+    "imageSrc": "./pawns/ozzi/ozzi_stanik.png",
     "person": "ozzi"
   },
   {
     "name": "Ależ mięśnie",
-    "imageSrc": "./game_pieces/pawns/ozzi/ozzi_szesciopak.png",
+    "imageSrc": "./pawns/ozzi/ozzi_szesciopak.png",
     "person": "ozzi"
   },
 
   {
     "name": "Olga ADHD",
-    "imageSrc": "./game_pieces/pawns/olga/olga_adhd.png",
+    "imageSrc": "./pawns/olga/olga_adhd.png",
     "person": "olga"
   },
   {
     "name": "Olga Chillera",
-    "imageSrc": "./game_pieces/pawns/olga/olga_chillera.png",
+    "imageSrc": "./pawns/olga/olga_chillera.png",
     "person": "olga"
   },
   {
     "name": "Chuj wie co",
-    "imageSrc": "./game_pieces/pawns/olga/olga_chuj_wie_co.png",
+    "imageSrc": "./pawns/olga/olga_chuj_wie_co.png",
     "person": "olga"
   },
   {
     "name": "Olga oksy",
-    "imageSrc": "./game_pieces/pawns/olga/olga_oksy.png",
+    "imageSrc": "./pawns/olga/olga_oksy.png",
     "person": "olga"
   },
 
   {
     "name": "Wika w sukience",
-    "imageSrc": "./game_pieces/pawns/wika/wika_sukienka.png",
+    "imageSrc": "./pawns/wika/wika_sukienka.png",
     "person": "wika"
   },
   {
     "name": "Zdziwiona Wiktoria Mazela",
-    "imageSrc": "./game_pieces/pawns/wika/wika_zdziwienie.png",
+    "imageSrc": "./pawns/wika/wika_zdziwienie.png",
     "person": "wika"
   },
 
   {
     "name": "Kamil się opala",
-    "imageSrc": "./game_pieces/pawns/kamil/kamil_opalanie.png",
+    "imageSrc": "./pawns/kamil/kamil_opalanie.png",
     "person": "kamil"
   },
 
   {
     "name": "Zamaskowany Perłą Chmielową",
-    "imageSrc": "./game_pieces/pawns/szczepan/szczepan_perla.png",
+    "imageSrc": "./pawns/szczepan/szczepan_perla.png",
     "person": "szczepan"
   },
   {
     "name": "Szczepan z cudem świata",
-    "imageSrc": "./game_pieces/pawns/szczepan/szczepan_zubrowka.png",
+    "imageSrc": "./pawns/szczepan/szczepan_zubrowka.png",
     "person": "szczepan"
   },
 
   {
     "name": "Wiktor Idol",
-    "imageSrc": "./game_pieces/pawns/wiktor/wiktor_panda.png",
+    "imageSrc": "./pawns/wiktor/wiktor_panda.png",
     "person": "wiktor"
   }
 ]

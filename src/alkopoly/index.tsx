@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Board from "./components/Board";
 import type { TileFromJSON, TileProps } from "./types/TileProps";
 import tilesData from "./data/tiles.json";
-import JoinModal from "./components/join-modal";
+import JoinModal from "../common/components/join-modal";
 
 const Alkopoly = () => {
   const [tiles, setTiles] = useState<TileProps[]>([]);
