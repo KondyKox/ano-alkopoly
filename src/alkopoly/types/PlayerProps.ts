@@ -9,7 +9,22 @@ export interface AlkopolyPlayer {
   currentTile: TileProps;
 }
 
-interface Pawn {
+export interface Pawn {
   name: string;
   imageSrc: string;
+  person: Person;
 }
+
+export interface PawnFromJSON extends Omit<Pawn, "person"> {
+  person: string;
+}
+
+export type Person =
+  | "kondy"
+  | "kamcio"
+  | "olga"
+  | "wika"
+  | "ozzi"
+  | "kamil"
+  | "szczepan"
+  | "wiktor";

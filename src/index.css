@@ -7,6 +7,7 @@
   --bg-pink-active: hsl(340, 80%, 50%);
   --bg-pink-transparent: hsla(340, 80%, 50%, 0.5);
   --bg-purple: hsl(280, 60%, 25%);
+  --bg-purple-active: hsl(280, 60%, 50%);
   --bg-purple-transparent: hsla(280, 60%, 25%, 0.8);
   --bg-gradient: linear-gradient(135deg, var(--bg-pink), var(--bg-purple));
 
