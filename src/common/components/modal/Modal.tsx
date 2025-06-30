@@ -1,6 +1,6 @@
-import type { ModalProps } from "../types/ModalProps";
-import Button from "./Button";
-import styles from "../styles/Modal.module.css";
+import type { ModalProps } from "../../types/ModalProps";
+import Button from "../Button";
+import styles from "../../styles/Modal.module.css";
 
 const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   if (!isOpen) return null;

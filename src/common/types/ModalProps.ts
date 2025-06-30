@@ -1,4 +1,4 @@
-import type { PlayerProps } from "./PlayerProps";
+import type { PlayerProps } from "./GameState";
 
 export interface ModalProps {
   isOpen: boolean;

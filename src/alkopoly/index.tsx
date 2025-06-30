@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import Board from "./components/Board";
-import type { TileFromJSON, TileProps } from "./types/TileProps";
-import tilesData from "./data/tiles.json";
-import JoinModal from "../common/components/join-modal";
-import Lobby from "../common/components/Lobby";
-import type { Person } from "../common/types/PlayerProps";
+import type { TileProps } from "./types/TileProps";
+import JoinModal from "../common/components/modal/join-modal";
+import Lobby from "../common/components/modal/Lobby";
+import { generateTiles } from "./utils/generateTiles";
 
 const testPlayers = [
   {
@@ -13,7 +12,6 @@ const testPlayers = [
     pawn: {
       name: "Pionek 1",
       imageSrc: "./pawns/rudy_chuj.png",
-      person: "Ozzi" as Person,
     },
   },
   {
@@ -22,7 +20,6 @@ const testPlayers = [
     pawn: {
       name: "Pionek 2",
       imageSrc: "./pawns/rudy_chuj.png",
-      person: "Ozzi" as Person,
     },
   },
   {
@@ -31,7 +28,6 @@ const testPlayers = [
     pawn: {
       name: "Pionek 3",
       imageSrc: "./pawns/rudy_chuj.png",
-      person: "Ozzi" as Person,
     },
   },
   {
@@ -40,7 +36,6 @@ const testPlayers = [
     pawn: {
       name: "Pionek 4",
       imageSrc: "./pawns/rudy_chuj.png",
-      person: "Ozzi" as Person,
     },
   },
 ];
@@ -50,14 +45,7 @@ const Alkopoly = () => {
   const [joined, setJoined] = useState<boolean>(false);
 
   useEffect(() => {
-    const parsed: TileProps[] = (tilesData as TileFromJSON[]).map(
-      (tile, index) => ({
-        ...tile,
-        id: index,
-      })
-    );
-
-    setTiles(parsed);
+    setTiles(generateTiles());
   }, []);
 
   return (

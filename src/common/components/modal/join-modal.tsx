@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import pawnsData from "../../alkopoly/data/pawns.json";
-import styles from "../styles/JoinModal.module.css";
+import pawnsData from "../../data/pawns.json";
+import styles from "../../styles/JoinModal.module.css";
+import type { JoinModalProps } from "../../types/ModalProps";
+import type { Pawn } from "../../types/GameState";
 import Modal from "./Modal";
-import InputGroup from "./InputGroup";
-import Button from "./Button";
-import type { Pawn, PawnFromJSON, Person } from "../types/PlayerProps";
-import type { JoinModalProps } from "../types/ModalProps";
+import InputGroup from "../InputGroup";
+import Button from "../Button";
 
 const JoinModal = ({ joined, setJoined }: JoinModalProps) => {
   const [pawns, setPawns] = useState<Pawn[]>([]);
@@ -13,12 +13,7 @@ const JoinModal = ({ joined, setJoined }: JoinModalProps) => {
   const [playerPawn, setPlayerPawn] = useState<Pawn | null>(null);
 
   useEffect(() => {
-    const parsed: Pawn[] = (pawnsData as PawnFromJSON[]).map((pawn) => ({
-      ...pawn,
-      person: pawn.person as Person,
-    }));
-
-    setPawns(parsed);
+    setPawns(pawnsData);
   }, []);
 
   const handlePawnClick = (pawn: Pawn) => {

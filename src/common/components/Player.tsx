@@ -1,4 +1,4 @@
-import type { PlayerProps } from "../types/PlayerProps";
+import type { PlayerProps } from "../types/GameState";
 import styles from "../styles/Player.module.css";
 
 const Player = ({ player }: { player: PlayerProps }) => {

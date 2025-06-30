@@ -1,9 +1,9 @@
 import Modal from "./Modal";
-import Button from "./Button";
 import { useState } from "react";
-import type { LobbyProps } from "../types/ModalProps";
-import Player from "./Player";
-import styles from "../styles/Lobby.module.css";
+import styles from "../../styles/Lobby.module.css";
+import Player from "../Player";
+import Button from "../Button";
+import type { LobbyProps } from "../../types/ModalProps";
 
 const Lobby = ({ joined, players }: LobbyProps) => {
   if (!joined) return null;

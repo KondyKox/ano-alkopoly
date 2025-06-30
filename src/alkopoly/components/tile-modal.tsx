@@ -1,4 +1,4 @@
-import Modal from "../../common/components/Modal";
+import Modal from "../../common/components/modal/Modal";
 import type { TileModalProps } from "../types/TileProps";
 import styles from "../styles/TileModal.module.css";
 import Button from "../../common/components/Button";
