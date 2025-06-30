@@ -58,12 +58,15 @@ const TileModal = ({ isOpen, onClose, tile }: TileModalProps) => {
           </div>
         </div>
       </div>
-      <Button
-        onClick={() => setConfirmOpen(true)}
-        className={styles.tileModal__btn}
-      >
-        Kup {tile.name}
-      </Button>
+      {tile.type === "property" && (
+        <Button
+          onClick={() => setConfirmOpen(true)}
+          className={styles.tileModal__btn}
+        >
+          Kup {tile.name}
+        </Button>
+      )}
+
       <Modal isOpen={isConfirmOpen} onClose={() => setConfirmOpen(false)}>
         <div className={styles.confirm__container}>
           Czy zakupić <span>{tile.name}</span> za <span>{tile.price}</span>zł?

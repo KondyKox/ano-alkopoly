@@ -5,9 +5,9 @@ import Modal from "./Modal";
 import InputGroup from "./InputGroup";
 import Button from "./Button";
 import type { Pawn, PawnFromJSON, Person } from "../types/PlayerProps";
+import type { JoinModalProps } from "../types/ModalProps";
 
-const JoinModal = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+const JoinModal = ({ joined, setJoined }: JoinModalProps) => {
   const [pawns, setPawns] = useState<Pawn[]>([]);
   const [playerName, setPlayerName] = useState<string>("");
   const [playerPawn, setPlayerPawn] = useState<Pawn | null>(null);
@@ -34,12 +34,12 @@ const JoinModal = () => {
       return;
     }
 
-    setIsOpen(false);
+    setJoined(true);
   };
 
   return (
     <Modal
-      isOpen={isOpen}
+      isOpen={!joined}
       onClose={() => alert("Jak ty chcesz debilu grać bez pionka i nazwy?")}
     >
       <form

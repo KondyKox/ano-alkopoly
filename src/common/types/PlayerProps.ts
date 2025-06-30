@@ -1,4 +1,4 @@
-export interface Player {
+export interface PlayerProps {
   id: number;
   name: string;
   pawn: Pawn;
