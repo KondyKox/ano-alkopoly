@@ -14,4 +14,5 @@ export interface JoinModalProps {
 export interface LobbyProps {
   joined: boolean; // display lobby when joined
   players: PlayerProps[];
+  startGame: () => void;
 }

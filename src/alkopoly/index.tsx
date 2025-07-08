@@ -4,10 +4,11 @@ import type { TileProps } from "./types/TileProps";
 import JoinModal from "../common/components/modal/join-modal";
 import Lobby from "../common/components/modal/Lobby";
 import { generateTiles } from "./utils/generateTiles";
+import { moves } from "./game/moves";
 
 const testPlayers = [
   {
-    id: 1,
+    id: "1",
     name: "Test 1",
     pawn: {
       name: "Pionek 1",
@@ -15,7 +16,7 @@ const testPlayers = [
     },
   },
   {
-    id: 2,
+    id: "2",
     name: "Test 2",
     pawn: {
       name: "Pionek 2",
@@ -23,7 +24,7 @@ const testPlayers = [
     },
   },
   {
-    id: 3,
+    id: "3",
     name: "Test 3",
     pawn: {
       name: "Pionek 3",
@@ -31,7 +32,7 @@ const testPlayers = [
     },
   },
   {
-    id: 4,
+    id: "4",
     name: "Test 4",
     pawn: {
       name: "Pionek 4",
@@ -53,7 +54,11 @@ const Alkopoly = () => {
       {!joined ? (
         <JoinModal joined={joined} setJoined={setJoined} />
       ) : (
-        <Lobby joined={joined} players={testPlayers} />
+        <Lobby
+          joined={joined}
+          players={testPlayers}
+          startGame={() => moves.startGame}
+        />
       )}
       <Board tiles={tiles} />
     </div>

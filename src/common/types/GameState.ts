@@ -1,11 +1,11 @@
-export interface GameState {
-  players: PlayerProps[];
-  currentPlayer: PlayerProps;
+export interface GameState<P extends PlayerProps = PlayerProps> {
+  players: Record<string, P>;
+  currentPlayerId: string;
   gameStarted: boolean;
 }
 
 export interface PlayerProps {
-  id: number;
+  id: string;
   name: string;
   pawn: Pawn;
 }

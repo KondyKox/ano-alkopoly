@@ -5,13 +5,14 @@ import Player from "../Player";
 import Button from "../Button";
 import type { LobbyProps } from "../../types/ModalProps";
 
-const Lobby = ({ joined, players }: LobbyProps) => {
+const Lobby = ({ joined, players, startGame }: LobbyProps) => {
   if (!joined) return null;
   const [gameStarted, setGameStarted] = useState<boolean>(false);
 
   const handleStartGame = () => {
     console.log("GAME STARTED!");
     setGameStarted(true);
+    startGame();
   };
 
   return (
