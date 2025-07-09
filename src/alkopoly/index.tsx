@@ -4,7 +4,6 @@ import type { TileProps } from "./types/TileProps";
 import JoinModal from "../common/components/modal/join-modal";
 import Lobby from "../common/components/modal/Lobby";
 import { generateTiles } from "./utils/generateTiles";
-import { moves } from "./game/moves";
 
 const testPlayers = [
   {
@@ -54,11 +53,7 @@ const Alkopoly = () => {
       {!joined ? (
         <JoinModal joined={joined} setJoined={setJoined} />
       ) : (
-        <Lobby
-          joined={joined}
-          players={testPlayers}
-          startGame={() => moves.startGame}
-        />
+        <Lobby joined={joined} players={testPlayers} />
       )}
       <Board tiles={tiles} />
     </div>

@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import Alkopoly from "./alkopoly";
 import Ano from "./ano";
 import Button from "./common/components/Button";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import socket from "./common/sockets";
 
 function App() {
+  useEffect(() => {
+    const onConnect = () => console.log("🎉 Socket is working!");
+    socket.on("connect", onConnect);
+
+    return () => {
+      socket.off("connect", onConnect); // odpinamy listener, ale NIE rozłączamy socketu!
+    };
+  }, []);
+
   return (
     <main className="container">
       <Routes>
