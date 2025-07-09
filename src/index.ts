@@ -2,6 +2,7 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import { Server } from "socket.io";
+import { handleAlkopolySocket } from "./alkopoly/server/socketHandlers";
 
 const vite_url = process.env.VITE_URL || "http://localhost:5173";
 
@@ -19,6 +20,8 @@ const io = new Server(server, {
 
 io.on("connection", (socket) => {
   console.log(`🟢 New connection: ${socket.id}`);
+
+  handleAlkopolySocket(socket);
 
   socket.on("disconnect", () => {
     console.log(`🔴 Disconnect: ${socket.id}`);

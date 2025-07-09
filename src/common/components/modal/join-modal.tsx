@@ -6,6 +6,7 @@ import type { Pawn } from "../../types/GameState";
 import Modal from "./Modal";
 import InputGroup from "../InputGroup";
 import Button from "../Button";
+import socket from "../../sockets";
 
 const JoinModal = ({ joined, setJoined }: JoinModalProps) => {
   const [pawns, setPawns] = useState<Pawn[]>([]);
@@ -28,6 +29,11 @@ const JoinModal = ({ joined, setJoined }: JoinModalProps) => {
       alert("No ale we wszystko zrób dobrze a nie...");
       return;
     }
+
+    socket.emit("joinGame", {
+      name: playerName,
+      pawn: playerPawn,
+    });
 
     setJoined(true);
   };
